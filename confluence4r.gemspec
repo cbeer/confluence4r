@@ -1,8 +1,7 @@
 require 'rubygems'
-require File.join(File.dirname(__FILE__), 'lib', 'soap', 'version')
 
 
-SPEC = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.name = 'confluence4r'
   s.summary = "Gem package for confluence"
