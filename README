@@ -2,5 +2,8 @@ Forked from Rails plugin (rails plugins are not forward compatible)
 
 Creating a gem out of it.
 
-Confluenc Reference:  Confluence XML-RPC and SOAP APIs
+Example: Confluence4r Rails Plugin
+http://confluence.atlassian.com/display/DISC/Confluence4r+Rails+Plugin
+
+Confluence Reference:  Confluence XML-RPC and SOAP APIs
 https://developer.atlassian.com/display/CONFDEV/Confluence+XML-RPC+and+SOAP+APIs
