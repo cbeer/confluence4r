@@ -1,6 +1,6 @@
 Forked from Rails plugin (rails plugins are not forward compatible)
 
-Creating a gem out of it.
+Creating a gem out of it is in progress!  There are some things missing from making it act like a gem, for now, use as a plugin.
 
 Example: Confluence4r Rails Plugin
 http://confluence.atlassian.com/display/DISC/Confluence4r+Rails+Plugin
