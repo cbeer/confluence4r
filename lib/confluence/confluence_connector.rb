@@ -16,7 +16,7 @@ class Confluence::Connector
   end
   
   def connect(service = nil)
-    unless url and username and password and service || default_service
+    unless url and ((admin_proxy_username and admin_proxy_password) or (username and password)) and service || default_service
       raise "Cannot get Confluence::RPC instance because the confluence url, username, password, or service have not been set"
     end
     
@@ -30,10 +30,11 @@ class Confluence::Connector
     conf = YAML.load_file("#{RAILS_ROOT}/config/confluence.yml")[RAILS_ENV]
     @url = conf['url'] || conf[:url]
     @default_service = conf['service'] || conf[:service]
-    @username = conf['username'] || conf[:username]
-    @password = conf['password'] || conf[:password]
     @admin_proxy_username = conf['admin_proxy_username'] || conf[:admin_proxy_username]
     @admin_proxy_password = conf['admin_proxy_password'] || conf[:admin_proxy_password]
+    # take these params manually if that's what is sent
+    @username = conf['username'] || conf[:username] || @admin_proxy_username
+    @password = conf['password'] || conf[:password] || @admin_proxy_password
   end
   
   def self.default_confluence_url
