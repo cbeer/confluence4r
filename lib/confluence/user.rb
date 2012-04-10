@@ -62,7 +62,11 @@ class Confluence::User < Confluence::RemoteDataObject
     return true if group_or_name == username
     return in_group?(group_or_name)
   end
-  
+ 
+    def add_profile_picture(filename, mime_type, picture_data)
+        confluence.addProfilePicture(self.username, filename, mime_type, picture_data)
+    end
+          
   def to_s
     self.username
   end
