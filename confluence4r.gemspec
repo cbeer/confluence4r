@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name = 'confluence4r'
   s.summary = "Atlassian Confluence XML::RPC client"
   s.description = "Atlassian Confluence XML::RPC client"
-  s.version = '0.1.1'
+  s.version = '0.2'
   s.licenses = "unknown"
 
   s.author = "Atlassian and Alagu"
