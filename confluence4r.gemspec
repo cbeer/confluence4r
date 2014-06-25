@@ -1,11 +1,12 @@
 require 'rubygems'
 
-
 Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.name = 'confluence4r'
-  s.summary = "Gem package for confluence"
+  s.summary = "Atlassian Confluence XML::RPC client"
+  s.description = "Atlassian Confluence XML::RPC client"
   s.version = '0.1'
+  s.licenses = "unknown"
 
   s.author = "Atlassian and Alagu"
   s.email = "alagu@goyaka.com"
