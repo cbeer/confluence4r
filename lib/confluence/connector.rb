@@ -1,6 +1,6 @@
 require 'yaml'
 
-require 'confluence/confluence_rpc'
+require 'confluence/rpc'
 
 class Confluence::Connector
   

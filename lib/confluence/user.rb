@@ -1,4 +1,4 @@
-require 'confluence/confluence_remote_data_object'
+require 'confluence/remote_data_object'
 
 class Confluence::User < Confluence::RemoteDataObject
 

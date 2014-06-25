@@ -1,5 +1,5 @@
 require 'active_support'
-require 'confluence/confluence_connector'
+require 'confluence/connector'
 
 # Abstract object representing some piece of data in Confluence.
 # This must be overridden by a child class that defines values
