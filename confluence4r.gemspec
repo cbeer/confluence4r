@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
 
   s.files = Dir.glob("{bin,lib,test}/**/*").delete_if { |item| item.match( /\.(svn|git)/ ) }
 
+  s.add_dependency 'activesupport'
   s.add_development_dependency "rake"
 end

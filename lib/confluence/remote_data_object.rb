@@ -1,4 +1,4 @@
-require 'active_support'
+require 'active_support/core_ext/class/attribute'
 require 'confluence/connector'
 
 # Abstract object representing some piece of data in Confluence.
@@ -8,8 +8,8 @@ require 'confluence/connector'
 class Confluence::RemoteDataObject
 #  include Reloadable
   
-  class_inheritable_accessor :attr_conversions, :readonly_attrs
-  class_inheritable_accessor :save_method, :get_method, :destroy_method
+  class_attribute :attr_conversions, :readonly_attrs
+  class_attribute :save_method, :get_method, :destroy_method
   
   attr_accessor :attributes
   
