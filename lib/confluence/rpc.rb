@@ -24,7 +24,7 @@ module Confluence
       @conf = server.proxy(proxy)
       @token = "12345"
       
-      @log = Logger.new(STDOUT)# "#{RAILS_ROOT}/log/confluence4r.log"
+      @log = Logger.new(STDERR)# "#{RAILS_ROOT}/log/confluence4r.log"
     end
     
     def login(username, password)
